@@ -1,4 +1,6 @@
 import Block from "./block.mjs";
+import Transaction from "./transaction.mjs";
+import Mempool from "./mempool.mjs";
 
 class Blockchain{
     constructor(){
@@ -17,22 +19,17 @@ class Blockchain{
 
 export default Blockchain;
 
+
 const blockchain = new Blockchain();
+const mempool = new Mempool();
 
 const block = Block.createBlock(1, 123, "gsdgquigwe", "yusdgjha");
 const block2 = Block.createBlock(2, 456, "uwghuiebc", block.hash)
 
-const transaction = {
-    amount : 1,
-    sender : "Alex",
-    receiver : "Anna"
-};
-
-block.addTransaction(transaction);
-
+const transaction = new Transaction(1, "Alex", "Anna");
+mempool.addTransaction(transaction);
 
 blockchain.addBlock(block);
 blockchain.addBlock(block2);
 
-blockchain.getChain();
-block.getTransactions();
+console.log(mempool)

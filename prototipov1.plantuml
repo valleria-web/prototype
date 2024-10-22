@@ -2,14 +2,16 @@
 
 class Blockchain{
     - chain: [{Block}]
+    + getChain()
+    + addBlock(block)
 }
 
 class Miner{
-    +proofOfWork()
+    + proofOfWork()
 }
 
 class Wallet{
-    +sendCoin()
+    + sendCoin()
 }
 
 class Block{
@@ -20,10 +22,16 @@ class Block{
     - previousBlockHash: String
     - Transactions:[{Transaction}]
     + createBlock()
+    + addTransaction(transaction)
+    + getTransactions()
 }
 
 class Transaction{
-
+    - transactionID: String 
+    - coinAmount: Int 
+    - senderPublickey: String
+    - receiverPublicKey: String
+    - isConfirmed: boolean
 }
 
 class Coin{
@@ -31,7 +39,8 @@ class Coin{
 }
 
 class Mempool{
-
+    - pendingTransactions: [{Transaction}]
+    + addTransaction(transaction)
 }
 
 @enduml
