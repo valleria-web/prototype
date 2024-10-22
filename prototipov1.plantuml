@@ -1,0 +1,31 @@
+@startuml prototipov1
+
+class Blockchain{
+    - chain: [{Block}]
+}
+
+class Miner{
+    +proofOfWork()
+}
+
+class Wallet{
+    +sendCoin()
+}
+
+class Block{
+
+}
+
+class Transaction{
+
+}
+
+class Coin{
+
+}
+
+class Mempool{
+    
+}
+
+@enduml
