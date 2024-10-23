@@ -1,7 +1,7 @@
 class Block{
     constructor(index, nonce, hash, previousBlockHash, transactions = []){
         this.index = index;
-        this.timeStamp = Date.now();
+        //this.timeStamp = Date.now();
         this.nonce = nonce;
         this.hash = hash;
         this.previousBlockHash = previousBlockHash;

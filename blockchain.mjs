@@ -1,6 +1,7 @@
 import Block from "./block.mjs";
 import Transaction from "./transaction.mjs";
 import Mempool from "./mempool.mjs";
+import Miner from "./miner.mjs";
 
 class Blockchain{
     constructor(){
@@ -20,8 +21,10 @@ class Blockchain{
 export default Blockchain;
 
 
+//App
 const blockchain = new Blockchain();
 const mempool = new Mempool();
+const miner = new Miner();
 
 const block = Block.createBlock(1, 123, "gsdgquigwe", "yusdgjha");
 const block2 = Block.createBlock(2, 456, "uwghuiebc", block.hash)
@@ -32,4 +35,9 @@ mempool.addTransaction(transaction);
 blockchain.addBlock(block);
 blockchain.addBlock(block2);
 
-console.log(mempool)
+
+const previousBlockHash = "jsdgcf"
+const currentBlockTransactions = mempool.getPendingTransactions()
+const nonce = 1;
+
+console.log(miner.hashBlock(previousBlockHash, currentBlockTransactions, nonce));

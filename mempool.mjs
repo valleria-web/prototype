@@ -5,7 +5,10 @@ class Mempool{
 
     addTransaction(transaction){
         this.pendingTransactions.push(transaction)
+    }
 
+    getPendingTransactions(){
+        return this.pendingTransactions;
     }
 }
 
