@@ -2,17 +2,24 @@
 
 class Blockchain{
     - chain: [{Block}]
+    + createGenesisBlock()
     + getChain()
     + addBlock(block)
+    + getLastBlock()
 }
 
-class Miner{
-    + hashBlock()
-    + proofOfWork()
+class Miner {
+    - blockchain: Blockchain
+    - mempool: Mempool
+    + hashBlock(): String
+    + proofOfWork(): Int
+    + mineBlock(): Block
 }
 
-class Wallet{
-    + sendCoin()
+class Mempool{
+    - pendingTransactions: [{Transaction}]
+    + addTransaction()
+    + getPendingTransactions()
 }
 
 class Block{
@@ -35,13 +42,13 @@ class Transaction{
     - isConfirmed: boolean
 }
 
-class Coin{
 
+class Wallet{
+    + sendCoin()
 }
 
-class Mempool{
-    - pendingTransactions: [{Transaction}]
-    + addTransaction(transaction)
+class Coin{
+
 }
 
 @enduml
