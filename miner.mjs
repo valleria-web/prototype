@@ -31,24 +31,25 @@ class Miner {
     return nonce;
   }
 
-  mineBlock() {
+  mineBlock(){
     const lastBlock = this.blockchain.getLastBlock();
-    const newIndex = lastBlock.index + 1;
-    const currentBlockTransactions = this.mempool.getPendingTransactions();
-
     const previousBlockHash = lastBlock.hash;
+    const newIndex = lastBlock.index + 1;
+
     const nonce = this.proofOfWork(previousBlockHash, currentBlockTransactions);
-    const blockHash = this.hashBlock(previousBlockHash, currentBlockTransactions, nonce);
+    const hash = this.hashBlock(previousBlockHash, currentBlockTransactions, nonce);
+
+    const currentBlockTransactions = this.mempool.getPendingTransactions()
 
     const newBlock = Block.createBlock(
       newIndex,
       nonce,
-      blockHash,
+      hash,
       previousBlockHash,
-      currentBlockTransactions
+      currentBlockTransactions    
     );
 
-    return newBlock;
+    return newBlock;         
   }
 }
 

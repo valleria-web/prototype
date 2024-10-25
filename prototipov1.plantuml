@@ -9,11 +9,11 @@ class Blockchain{
 }
 
 class Miner {
-    - blockchain: Blockchain
-    - mempool: Mempool
+    - blockchain : Blockchain
+    - mempool : Mempool
     + hashBlock(): String
     + proofOfWork(): Int
-    + mineBlock(): Block
+    + mineBlock()
 }
 
 class Mempool{
@@ -50,5 +50,9 @@ class Wallet{
 class Coin{
 
 }
+
+Miner ..> Block : uses
+Miner --> Blockchain : associate
+Miner --> Mempool : associate
 
 @enduml

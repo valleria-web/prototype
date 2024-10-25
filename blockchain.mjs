@@ -20,7 +20,7 @@ class Blockchain {
   }
 
   getLastBlock(){
-    return this.chain[this.chain.length -1];
+    return this.chain[this.chain.length -1]
   }
 }
 
