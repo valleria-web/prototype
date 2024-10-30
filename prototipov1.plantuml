@@ -20,6 +20,8 @@ class Mempool{
     - pendingTransactions: [{Transaction}]
     + addTransaction()
     + getPendingTransactions()
+    + clearPendingTransactions()
+
 }
 
 class Block{
@@ -48,7 +50,12 @@ class Wallet{
 }
 
 class Coin{
-
+    - name: String
+    - ticker: String 
+    - initialSupply: Int
+    - totalSupply: Int
+    + getCoin()
+    + mintCoinbase()
 }
 
 Miner ..> Block : uses

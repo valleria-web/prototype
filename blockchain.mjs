@@ -1,12 +1,15 @@
 import Block from "./block.mjs";
+import Coin from "./coin.mjs"
 
 class Blockchain {
   constructor() {
     this.chain = [];
+    this.coin = new Coin("Bitcoin", "BTC", 1000)
   }
 
-  createGenesisBlock(){
-    const genesisBlock = Block.createBlock(1, "0", "0", "0", []);{
+  createGenesisBlock() {
+    const genesisBlock = Block.createBlock(1, "0", "0", "0", []);
+    {
       this.addBlock(genesisBlock);
     }
   }
@@ -17,10 +20,17 @@ class Blockchain {
 
   addBlock(block) {
     this.chain.push(block);
+    this.confirmTransactions(block.transactions);
   }
 
-  getLastBlock(){
-    return this.chain[this.chain.length -1]
+  getLastBlock() {
+    return this.chain[this.chain.length - 1];
+  }
+
+  confirmTransactions(currentBlockTransactions) {
+    for (const transaction of currentBlockTransactions) {
+      transaction.isConfirmed = true;
+    }
   }
 }
 

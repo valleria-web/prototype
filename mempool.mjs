@@ -1,15 +1,19 @@
-class Mempool{
-    constructor(){
-        this.pendingTransactions = [];
-    }
+class Mempool {
+  constructor() {
+    this.pendingTransactions = [];
+  }
 
-    addTransaction(transaction){
-        this.pendingTransactions.push(transaction)
-    }
+  addTransaction(transaction) {
+    this.pendingTransactions.push(transaction);
+  }
 
-    getPendingTransactions(){
-        return this.pendingTransactions;
-    }
+  getPendingTransactions() {
+    return this.pendingTransactions;
+  }
+
+  clearPendingTransactions() {
+    this.pendingTransactions = [];
+  }
 }
 
 export default Mempool;
