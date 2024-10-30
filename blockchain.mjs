@@ -1,10 +1,11 @@
 import Block from "./block.mjs";
 import Coin from "./coin.mjs"
 
+
 class Blockchain {
   constructor() {
     this.chain = [];
-    this.coin = new Coin("Bitcoin", "BTC", 1000)
+    this.coin = new Coin("Bitcoin", "BTC", 1000);
   }
 
   createGenesisBlock() {
