@@ -17,6 +17,8 @@ mempool.addTransaction(transaction);
 //const block = miner.mineBlock();
 //console.log(block);
 
+
+blockchain.coin.mintCoinbase();
 const coin = blockchain.coin.getCoin();
 console.log(coin)
 

@@ -12,7 +12,18 @@ Block --> Transaction : contains
 
 ____
 
-
+*Cuanto vale en USD la red de Bitcoin?*
+1. Actualmente, el poder computacional de la red Bitcoin (hashrate) es de aproximadamente 670,57 EH/s (exa-hashes por segundo), con una dificultad de minería de 92,67 T (terahashes). Este nivel de hashrate indica una intensa competencia entre los mineros.
+2. Se necesitarían 3,2 millones de Antminers S19 Pro para igualar el hashrate de la red Bitcoin.
+3. Marathon Digital, la mayor empresa minera, cuenta con 199.000 mineros con una inversión de $645,000,000 USD (seiscientos cuarenta y cinco millones de dólares).
+4. Si quisieramos igualar el hashrate de la red Bitcoin, tendriamos comprar 3,2 millones de Antminers a $3000 = 9.6 mil millones de dólares de inversión.
+5. Considerando el marketcap de Bitcoin al dia de hoy: $1.25 trillion. 
+6. *Ahora vamos dividir el marketcap de Bitcoin entre la inversion en antiminers $1.25 trillion / 9.6 mil millones de dólares.*
+7. La relación entre el market cap de Bitcoin ($1.25 trillón) y la inversión en Antminers ($9.6 mil millones) es aproximadamente 130.2. Esto significa que el valor de mercado actual de Bitcoin es alrededor de 130 veces mayor que la inversión realizada en los Antminers. 
+8. *Basado en el cálculo anterior, el valor implícito de cada BTC sería aproximadamente $552.87 USD si estuviera directamente proporcional a la relación entre el market cap de Bitcoin y la inversión en Antminers* 
+9. Si fuera el caso que generar un bitcoin consume igual valor en energia, el valor aproximado de cada Bitcoin seria de $1100 USD.
+Curiosidades que podemos hablar con ChatGPT👩🏼‍💻🌻
+____
 Tecnicamente, há diferenças importantes entre importar uma dependência diretamente e recebê-la como parâmetro no construtor da sua classe.
 
 1. Acoplamento
@@ -134,11 +145,68 @@ In the system, the coin is essentially the object that flows between the differe
 
 ___ 
 
+a la fecha de hoy cuando cuesta Antminers S19 Pro ?
+ChatGPT Plus
+ChatGPT
+
+Se ha buscado 5 sitios
+
+As of late October 2024, the price for a Bitmain Antminer S19 Pro generally ranges between $2,999 and $3,700 USD, depending on the specific vendor and included services like warranties or maintenance packages. For instance, some sites list it closer to $3,459, while prices for new units on other platforms like Sesterce start around $2,999 for buyers prioritizing a budget-friendly setup with fewer add-ons. This model offers a hashrate of 110 TH/s and is known for its power consumption of around 3250W, making it one of the more profitable options for SHA-256 mining despite electricity costs.
+
+Sources: Kryptex, TokenTax
+
+
+
+
+
+
+
+Tú dijiste:
+calcular 3,2 milllones antiminer  x 3000 dolares 
+ChatGPT Plus
+ChatGPT
+El costo total de 3,2 millones de Antminers a $3000 cada uno sería de $9,600,000,000 USD. ​​
+
+
+
+1/2
+
+Tú dijiste:
+y cual es el market cap de bitcoin a la fecha de hoy?
+ChatGPT Plus
+ChatGPT
+
+Se ha buscado 6 sitios
+
+As of today, October 30, 2024, the market cap of Bitcoin stands at approximately $1.25 trillion, with Bitcoin priced around $71,988 USD. This valuation reflects the current circulating supply and recent price increases in the cryptocurrency market. For real-time updates, checking platforms like Coinbase or CoinGecko is recommended.
+
+Sources: Coinbase, CoinGecko
+
+Tú dijiste:
+ahora vamos dividir el marketcap entre la inversion en antiminers
+$1.25 trillion / 9.6 mil millones de dólares
+
+La relación entre el market cap de Bitcoin ($1.25 trillón) y la inversión en Antminers ($9.6 mil millones) es aproximadamente 130.2. Esto significa que el valor de mercado actual de Bitcoin es alrededor de 130 veces mayor que la inversión realizada en los Antminers. ​​
+
+
+Tú dijiste:
+que valor deberia tener cada btc basado en este calculo anterior?
+ChatGPT Plus
+ChatGPT
+Basado en el cálculo anterior, el valor implícito de cada BTC sería aproximadamente $552.87 USD si estuviera directamente proporcional a la relación entre el market cap de Bitcoin y la inversión en Antminers.
+
+
+___
+
 Atualmente, o poder computacional da rede Bitcoin (hashrate) é de aproximadamente 670,57 EH/s (exa-hashes por segundo), com uma dificuldade de mineração de 92,67 T (terahashes). Este nível de hashrate indica uma intensa competição entre os mineradores. 
 
 3,2 milhões de Antminers S19 Pro para igualar o hashrate da rede Bitcoin.
 
-Marathon Digital tem 199.000 mineradores $645,000,000 investment "seiscentos e quarenta e cinco milhões de dólares."
+Marathon Digital a maior empresa mineradora tem 199.000 mineradores $645,000,000 investment "seiscentos e quarenta e cinco milhões de dólares."
+
+3,2 millones de Antminers a $3000 = 9.6 mil millones de dólares.
+
+
 
 Portanto, você precisaria de $4.368.000.000 (quatro bilhões, trezentos e sessenta e oito milhões de dólares) para comprar 3,2 milhões de Antminers S19 Pro.
 
