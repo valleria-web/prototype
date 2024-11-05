@@ -44,8 +44,14 @@ class Transaction{
     - isConfirmed: boolean
 }
 
-
 class Wallet{
+    - blockchain : Blockchain
+    - name: String
+    - publicKey: String
+    - balance: Int
+    - Transactions:[{Transaction}]
+    + generateRandomPublicKey()
+    + getWallet()
     + sendCoin()
 }
 

@@ -16,7 +16,7 @@ class Blockchain {
   }
 
   getChain() {
-    console.log(this.chain);
+    return this.chain;
   }
 
   addBlock(block) {

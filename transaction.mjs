@@ -1,9 +1,9 @@
 class Transaction{
-    constructor(amount, sender, receiver){
+    constructor(coinAmount, senderPublicKey, receiverPublicKey){
         this.transactionID = this.generateRandomID();
-        this.coinAmount = amount;
-        this.senderPublicKey = sender;
-        this.receiverPublicKey = receiver;
+        this.coinAmount = coinAmount;
+        this.senderPublicKey = senderPublicKey;
+        this.receiverPublicKey = receiverPublicKey;
         this.isConfirmed = false;
     }
 
