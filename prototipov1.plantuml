@@ -67,5 +67,8 @@ class Coin{
 Miner ..> Block : uses
 Miner --> Blockchain : associate
 Miner --> Mempool : associate
+Wallet --> Blockchain : associate
+Blockchain ..> Block : uses
+Blockchain ..> Coin : uses
 
 @enduml
