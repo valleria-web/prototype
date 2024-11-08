@@ -7,13 +7,13 @@ class Blockchain {
   constructor() {
     this.chain = [];
     this.coin = new Coin("Bitcoin", "BTC", 100);
-    this.createGenesisBlock();
     this.genesisWallet = new Wallet("Genesis Wallet", this);
+    this.createGenesisBlock();
   }
 
   createGenesisBlock() {
     const coinbase = this.coin.mintCoinbase();
-    const rewardTransaction = new Transaction(coinbase, "", this.genesisWallet);
+    const rewardTransaction = new Transaction(coinbase, "SYSTEM", this.genesisWallet.publicKey);
 
     const genesisBlock = Block.createBlock(1, "0", "0", "0", [rewardTransaction]);
     {

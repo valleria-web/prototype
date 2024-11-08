@@ -18,6 +18,7 @@ class Wallet {
       balance: this.balance,
     };
   }
+
 }
 
 export default Wallet;

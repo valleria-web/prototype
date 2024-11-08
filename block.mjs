@@ -17,7 +17,7 @@ class Block{
     }
 
     getTransactions(){
-        console.log(this.transactions)
+        return this.transactions;
     }
 }
 

@@ -70,5 +70,6 @@ Miner --> Mempool : associate
 Wallet --> Blockchain : associate
 Blockchain ..> Block : uses
 Blockchain ..> Coin : uses
+Block ..> Transaction : uses
 
 @enduml
