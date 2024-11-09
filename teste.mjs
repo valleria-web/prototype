@@ -8,8 +8,8 @@ import Wallet from "./wallet.mjs";
 
 const blockchain = new Blockchain();
 
-console.log(blockchain.genesisWallet.getWallet())
+const genesisWallet = blockchain.genesisWallet;
 
-console.log(blockchain.genesisWallet.updateTransactions());
+genesisWallet.updateTransactions();
 
-
+console.log(genesisWallet.getWallet())

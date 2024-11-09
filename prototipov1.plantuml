@@ -50,9 +50,12 @@ class Wallet{
     - publicKey: String
     - balance: Int
     - Transactions:[{Transaction}]
+    + sendCoin()
+    + updateTransactions()
+    + updateBalance()
     + generateRandomPublicKey()
     + getWallet()
-    + sendCoin()
+
 }
 
 class Coin{

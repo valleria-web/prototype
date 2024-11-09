@@ -19,6 +19,16 @@ class Wallet {
     };
   }
 
+  updateTransactions() {
+    this.transactions = this.blockchain
+      .getChain()
+      .flatMap((block) => block.transactions)
+      .filter(
+        (transaction) =>
+          transaction.senderPublicKey === this.publicKey ||
+          transaction.receiverPublicKey === this.publicKey
+      );
+  }
 }
 
 export default Wallet;
