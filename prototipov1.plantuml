@@ -2,6 +2,8 @@
 
 class Blockchain{
     - chain: [{Block}]
+    - coin : Coin
+    - wallet : Wallet
     + createGenesisBlock()
     + getChain()
     + addBlock(block)
@@ -67,12 +69,14 @@ class Coin{
     + mintCoinbase()
 }
 
+Blockchain ..> Block : uses
+Blockchain ..> Coin : uses
 Miner ..> Block : uses
 Miner --> Blockchain : associate
 Miner --> Mempool : associate
 Wallet --> Blockchain : associate
-Blockchain ..> Block : uses
-Blockchain ..> Coin : uses
+Wallet --> Mempool : associate
+Wallet ..> Transaction : uses
 Block ..> Transaction : uses
 
 @enduml
