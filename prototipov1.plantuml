@@ -8,11 +8,13 @@ class Blockchain{
     + getChain()
     + addBlock(block)
     + getLastBlock()
+    + confirmTransactions(currentBlockTransactions)
 }
 
 class Miner {
     - blockchain : Blockchain
     - mempool : Mempool
+    - wallet : Wallet
     + hashBlock(): String
     + proofOfWork(): Int
     + mineBlock()
@@ -50,8 +52,9 @@ class Wallet{
     - blockchain : Blockchain
     - name: String
     - publicKey: String
-    - balance: Int
+    - _balance: Int
     - Transactions:[{Transaction}]
+    + getBalance()
     + sendCoin()
     + updateTransactions()
     + updateBalance()
@@ -65,8 +68,8 @@ class Coin{
     - ticker: String 
     - initialSupply: Int
     - maxSupply: Int
-    + getCoin()
     + mintCoinbase()
+    + getCoin()
 }
 
 Blockchain ..> Block : uses

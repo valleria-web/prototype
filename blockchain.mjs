@@ -18,6 +18,7 @@ class Blockchain {
     const genesisBlock = Block.createBlock(1, "0", "0", "0", [rewardTransaction]);
     {
       this.addBlock(genesisBlock);
+      this.genesisWallet.updateBalance();
     }
   }
 
@@ -28,6 +29,7 @@ class Blockchain {
   addBlock(block) {
     this.chain.push(block);
     this.confirmTransactions(block.transactions);
+    console.log(`[addBlock] Block added to chain:`, block);
   }
 
   getLastBlock() {

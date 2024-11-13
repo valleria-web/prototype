@@ -3,7 +3,8 @@ import Block from "./block.mjs";
 import Transaction from "./transaction.mjs";
 
 class Miner {
-  constructor(blockchain, mempool, wallet) {
+  constructor(name, blockchain, mempool, wallet) {
+    this.name = name,
     this.blockchain = blockchain;
     this.mempool = mempool;
     this.wallet = wallet;
@@ -34,6 +35,9 @@ class Miner {
   }
 
   mineBlock() {
+
+    console.log(`\n[mineBlock] ${this.name} is mining a block...`);
+
     const lastBlock = this.blockchain.getLastBlock();
     const previousBlockHash = lastBlock.hash;
     const newIndex = lastBlock.index + 1;
