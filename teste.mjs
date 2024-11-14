@@ -37,7 +37,7 @@ class AppStart{
         console.log(`[app] Genesis Wallet Balance: ${this.blockchain.genesisWallet.getBalance()} BTC `);
         console.log(`[app] Balance of ${this.miner.name}: ${this.minerWallet.getBalance()} BTC `);        
         console.log(`[app] Balance of ${this.testWallet.name}: ${this.testWallet.getBalance()} BTC `);
-        console.log("Bitcoin Actual Suplly:", this.blockchain.coin);
+        console.log("Bitcoin Actual Supply:", this.blockchain.coin);
     }
 }
 
