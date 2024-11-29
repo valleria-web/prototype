@@ -150,8 +150,3 @@ This project is **open-source** and available under the [MIT License](LICENSE).
 Contributions are welcome! Feel free to fork, improve, or suggest new features.
 
 ---
-
-
-
-
-
