@@ -1,4 +1,4 @@
-# Blockchain Prototype Application 🚀
+# Blockchain Prototype Application V.1🚀
 
 A **JavaScript-based blockchain simulation** featuring mining, wallet management, transactions, and cryptocurrency supply tracking. This project is designed for learning purposes and mimics the behavior of a simplified cryptocurrency system like Bitcoin.
 
