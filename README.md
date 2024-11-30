@@ -106,8 +106,6 @@ The application will:
 
 ---
 
----
-
 ## 🛠️ Sample Output
 
 Here’s what the application logs during execution:
