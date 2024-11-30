@@ -123,15 +123,6 @@ Here’s what the application logs during execution:
 [app] Balance of TestWallet: 2 BTC
 Bitcoin Actual Supply: 100 BTC
 
-
-### Key Features:
-1. **Code Block Formatting**: Wrap the output in a `plaintext` code block for proper display on GitHub.
-2. **Introductory Sentence**: Briefly explains the significance of the output.
-3. **Clean Divider**: Separates this section from others for a polished look.
-
-This structure ensures clarity and professionalism, making the sample output easy to understand and visually appealing!
-
-
 ---
 
 ## 🌟 Future Enhancements
