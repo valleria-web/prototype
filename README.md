@@ -106,17 +106,29 @@ The application will:
 
 ---
 
-# Blockchain Project Overview
+## 🛠️ Sample Output
 
-[app] Creating Blockchain, creating Coin, creating GenesisWallet, creating GenesisBlock...  
-[app] Creating Mempool...  
-[app] Creating MinerWallet/TestWallet and associations with blockchain and mempool...  
-[app] Creating Miner, giving him a name MinerOne, blockchain, mempool and wallet...  
-[app] Starting mining session...  
-[app] Genesis Wallet Balance: 1 BTC  
-[app] Balance of Miner_One: 1 BTC  
-[app] Balance of TestWallet: 2 BTC  
-Bitcoin Actual Supply: 100 BTC  
+Here’s what the application logs during execution:
+
+```plaintext
+[app] Creating Blockchain, creating Coin, creating GenesiWallet, creating GenesisBlock...
+[app] Creating Mempool...
+[app] Creating MinerWallet/TestWallet and associations with blockchain and mempool...
+[app] Creating Miner, giving him a name MinerOne, blockchain, mempool and wallet...
+[app] Starting mining session...
+[app] Genesis Wallet Balance: 1 BTC
+[app] Balance of Miner_One: 1 BTC
+[app] Balance of TestWallet: 2 BTC
+Bitcoin Actual Supply: 100 BTC
+
+
+### Key Features:
+1. **Code Block Formatting**: Wrap the output in a `plaintext` code block for proper display on GitHub.
+2. **Introductory Sentence**: Briefly explains the significance of the output.
+3. **Clean Divider**: Separates this section from others for a polished look.
+
+This structure ensures clarity and professionalism, making the sample output easy to understand and visually appealing!
+
 
 ---
 
@@ -136,3 +148,4 @@ This project is **open-source** and available under the [MIT License](LICENSE).
 Contributions are welcome! Feel free to fork, improve, or suggest new features.
 
 ---
+
