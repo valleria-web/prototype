@@ -106,20 +106,17 @@ The application will:
 
 ---
 
-## 🛠️ Sample Output
+# Blockchain Project Overview
 
-Here’s what the application logs during execution:
-
-```plaintext
-[app] Creating Blockchain, creating Coin, creating GenesiWallet, creating GenesisBlock...
-[app] Creating Mempool...
-[app] Creating MinerWallet/TestWallet and associations with blockchain and mempool...
-[app] Creating Miner, giving him a name MinerOne, blockchain, mempool and wallet...
-[app] Starting mining session...
-[app] Genesis Wallet Balance: 1 BTC
-[app] Balance of Miner_One: 1 BTC
-[app] Balance of TestWallet: 2 BTC
-Bitcoin Actual Supply: 100 BTC
+[app] Creating Blockchain, creating Coin, creating GenesisWallet, creating GenesisBlock...  
+[app] Creating Mempool...  
+[app] Creating MinerWallet/TestWallet and associations with blockchain and mempool...  
+[app] Creating Miner, giving him a name MinerOne, blockchain, mempool and wallet...  
+[app] Starting mining session...  
+[app] Genesis Wallet Balance: 1 BTC  
+[app] Balance of Miner_One: 1 BTC  
+[app] Balance of TestWallet: 2 BTC  
+Bitcoin Actual Supply: 100 BTC  
 
 ---
 
@@ -127,9 +124,9 @@ Bitcoin Actual Supply: 100 BTC
 
 Here are some ideas to expand this project:
 
-- 🔒 **Cryptographic Verification**: Implement cryptographic algorithms to verify transactions and ensure security.
-- 🌐 **Network Simulation**: Create a decentralized network with multiple miners and blockchain nodes.
-- 🖥️ **User Interface**: Develop a user-friendly GUI for easier interaction with the blockchain.
+- 🔒 **Cryptographic Verification**: Implement cryptographic algorithms to verify transactions and ensure security.  
+- 🌐 **Network Simulation**: Create a decentralized network with multiple miners and blockchain nodes.  
+- 🖥️ **User Interface**: Develop a user-friendly GUI for easier interaction with the blockchain.  
 
 ---
 
